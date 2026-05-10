@@ -10,5 +10,6 @@
 | 2026-05-06 | Arrays & Hashing | Valid Anagram | 使用hash紀錄每個字出現的頻率，在比較兩個hash是否相等 | O(n) | O(1) 因為最多出現26個字母 |
 | 2026-05-06 | Arrays & Hashing | Two Sum | 在單次遍歷中利用hash map記錄已出現的數字，並即時檢查當前元素的互補數是否已存在 | O(n) | O(n) |
 | 2026-05-06 | Arrays & Hashing | Group Anagrams | 將每個字串轉換為字母出現頻率的序列，再序列化成字串作為hash key，以此將具有相同字母頻率分布(anagram)的字串分組 | O(m * n) | O(m) 額外空間，O(m * n)儲存輸出，其中m為字串數量，n為最常字串長度 |
-| 2026-05-09 | Two Pointers | Valid Palindrome | 使用雙指針從字串兩端開始比較，遇到非英數字元則跳過，並將字母統一轉成小寫後再進行比較，若所有對應字元皆相同，則該字串為palindrome。 | O(n), n是輸入字串的長度 | O(1) |
-| 2026-05-09 | Sliding Window | Best Time to Buy And Sell Stock | 由於賣出必須發生在買入之後，因此我們只需要在遍歷陣列時持續記錄目前為止的最低價格，並計算以當前價格賣出時能得到的最大利潤。 | O(n), n是輸入列表的長度 | O(1) |
+| 2026-05-09 | Two Pointers | Valid Palindrome | 使用雙指針從字串兩端開始比較，遇到非英數字元則跳過，並將字母統一轉成小寫後再進行比較，若所有對應字元皆相同，則該字串為palindrome。 | O(n)，n是輸入字串的長度 | O(1) |
+| 2026-05-09 | Sliding Window | Best Time to Buy And Sell Stock | 由於賣出必須發生在買入之後，因此我們只需要在遍歷陣列時持續記錄目前為止的最低價格，並計算以當前價格賣出時能得到的最大利潤。 | O(n)，n是輸入列表的長度 | O(1) |
+| 2026-05-10 | Sliding Window | Longest Substring Without Repeating Characters | 使用sliding window維護合法的 substring，右指針負責擴展視窗，若出現重複字元則移動左指針移除重複元素，並持續更新目前最長的合法子字串長度。 | O(n)，n表示字串長度，雖然程式中存在巢狀的while迴圈，但每個字元最多只會被加入集合一次，並從集合中移除一次。 | O(n) |
